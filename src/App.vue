@@ -1,23 +1,60 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+  <div id="header">
+    <h1>{{ title }}</h1>
+    <h2>{{ name }}</h2>
+    <p>勢いでドメイン取っちゃったんだけどなにしよ…</p>
+    <p>なんもアイディア思いつかない</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'header',
+  data () {
+    return {
+      title: 'new generations',
+      name: 'qazx7412,kairox,回路'
+    }
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  margin: 0;
+}
+
+#header{
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  line-height: 1;
+  padding: 4.2vw 16.8vw 0.84vw;  /*あとで変える 50px 200px 10px*/
+  background: url('/static/hed.png') center center;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-color: #b5b5b5 ;
+}
+
+#header h1{
+  font-size: 3.5vw;
+  color: #FFFFFF;
+  line-height: 0;
+}
+
+#header h2{
+  font-size: 2vw;
+  color: #FFFFFF;
+  line-height: 2;
+}
+
+#header p{
+  font-size: 1vw;
+  color: #FFFFFF;
+  line-height: 0;
+}
+
+@media screen and (max-width:990px) {
+  #header p{
+    display: none;
+  }
 }
 </style>
