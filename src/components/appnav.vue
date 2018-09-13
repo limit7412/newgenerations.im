@@ -37,7 +37,7 @@ export default {
         },
         {
           name: '走るゲーム',
-          url: 'running_event/index.html'
+          url: 'static/running_event/index.html'
         },
         {
           name: 'exit',
