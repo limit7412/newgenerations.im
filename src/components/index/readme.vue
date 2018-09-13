@@ -25,10 +25,12 @@ export default {
 </script>
 
 <style>
+
 #readme h2{
   font-size: 30px;
   border-left: 5px solid #4682B4;
   padding: 5px;
+  font-weight: normal;
 }
 
 #readme h3{
@@ -36,6 +38,7 @@ export default {
   margin-left: 5px;
   padding-left: 5px;
   width: 60vw;
+  font-weight: normal;
 }
 
 #readme p{
@@ -45,6 +48,7 @@ export default {
 
 #readme h4{
   margin-left: 20px;
+  font-weight: normal;
 }
 
 #readme ul li{

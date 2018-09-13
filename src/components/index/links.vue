@@ -1,0 +1,56 @@
+<template>
+  <div id="links">
+    <h2>link</h2>
+      <p>
+        <a href="http://abe7usa3.firebird.jp"><img src="/static/img/usaminenter.jpg"></a>
+      </p>
+      <p>
+        <!-- <a class="twitter-timeline" href="https://twitter.com/qazx7412?ref_src=twsrc%5Etfw">Tweets by qazx7412</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+      </p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'links',
+  data () {
+    return {
+    }
+  }
+}
+</script>
+
+<style>
+#links h2{
+  font-size: 30px;
+  border-left: 5px solid #4682B4;
+  padding: 5px;
+  font-weight: normal;
+}
+
+#links h3{
+  border-bottom: 1px solid #4682B4;
+  margin-left: 5px;
+  padding-left: 5px;
+  width: 60vw;
+  font-weight: normal;
+}
+
+#links p{
+  margin-left: 20px;
+  margin-right: 10vw;
+}
+
+#links h4{
+  margin-left: 20px;
+  font-weight: normal;
+}
+
+a:link{
+  color: #00BFFF;
+}
+a:visited{
+  color: #1E90FF;
+}
+</style>

@@ -1,22 +1,27 @@
 <template>
   <div class="index">
-    <appcatch/>
+    <indexcatch/>
     <ul class="wrapper">
       <li class="item">
         <readme/>
+      </li>
+      <li class="sbar">
+        <links/>
       </li>
     </ul>
   </div>
 </template>
 
 <script>
-import appcatch from './appcatch'
+import indexcatch from './index/indexcatch'
 import readme from './index/readme'
+import links from './index/links'
 
 export default {
   components: {
-    appcatch,
-    readme
+    indexcatch,
+    readme,
+    links
   },
   name: 'index',
   data () {
@@ -35,6 +40,15 @@ export default {
 @media screen and (min-width:990px){
   .wrapper{
     display: block;
+  }
+
+  .item{
+    float: left;
+  }
+
+  .sbar{
+    float: right;
+    margin-right: 10vw;
   }
 }
 

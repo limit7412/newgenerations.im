@@ -1,5 +1,5 @@
 <template>
-  <div id="appcatch">
+  <div id="indexcatch">
     <!-- <h1>なんか何も無いと寂しいので</h1>
     <p>卯月の画像でも貼っておきますね</p> -->
   </div>
@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'appcatch',
+  name: 'indexcatch',
   data () {
     return {
     }
@@ -20,7 +20,7 @@ body{
   margin: 0;
 }
 
-#appcatch{
+#indexcatch{
   text-align: right;
   background: url('/static/img/catch.png') no-repeat top -23vw center;
   background-blend-mode: multiply;
@@ -29,12 +29,12 @@ body{
   padding: 5vw 3vw 19vw;
 }
 
-#appcatch h1{
+#indexcatch h1{
   color: #F9F9F9;
   font-size: 3vw;
 }
 
-#appcatch p{
+#indexcatch p{
   color: #F9F9F9;
   font-size: 1.5vw;
 }
