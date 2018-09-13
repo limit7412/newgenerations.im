@@ -28,7 +28,7 @@ body{
   text-align: center;
   line-height: 1;
   padding: 4.2vw 16.8vw 0.84vw;  /*あとで変える 50px 200px 10px*/
-  background: url('/static/hed.png') center center;
+  background: url('/static/img/hed.png') center center;
   background-blend-mode: multiply;
   background-size: cover;
   background-color: #b5b5b5 ;
