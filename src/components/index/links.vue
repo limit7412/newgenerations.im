@@ -5,14 +5,18 @@
         <a href="http://abe7usa3.firebird.jp"><img src="/static/img/usaminenter.jpg"></a>
       </p>
       <p>
-        <!-- <a class="twitter-timeline" href="https://twitter.com/qazx7412?ref_src=twsrc%5Etfw">Tweets by qazx7412</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+        <Timeline :id="'qazx7412'" :sourceType="'likes'" :options="{ theme: 'light' }"/>
       </p>
   </div>
 </template>
 
 <script>
+import Timeline from 'vue-tweet-embed/timeline'
+
 export default {
+  components: {
+    Timeline
+  },
   name: 'links',
   data () {
     return {
