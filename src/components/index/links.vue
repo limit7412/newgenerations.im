@@ -5,7 +5,7 @@
         <a href="http://abe7usa3.firebird.jp"><img src="/static/img/usaminenter.jpg"></a>
       </p>
       <p>
-        <Timeline :id="'qazx7412'" :sourceType="'likes'" :options="{ theme: 'light' }"/>
+        <Timeline :id="'qazx7412'" :sourceType="'itmeline'" :options="{ theme: 'light' }"/>
       </p>
   </div>
 </template>
