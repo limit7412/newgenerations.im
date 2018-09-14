@@ -4,6 +4,7 @@
     <ul class="wrapper">
       <li class="item">
         <readme/>
+        <product/>
       </li>
       <li class="sbar">
         <links/>
@@ -16,12 +17,14 @@
 import indexcatch from './index/indexcatch'
 import readme from './index/readme'
 import links from './index/links'
+import product from './index/product'
 
 export default {
   components: {
     indexcatch,
     readme,
-    links
+    links,
+    product
   },
   name: 'index',
   data () {
