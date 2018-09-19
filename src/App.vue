@@ -7,6 +7,8 @@
 </template>
 
 <script>
+// import 'normalize.css'
+
 import appheader from './components/appheader'
 import appnav from './components/appnav'
 
