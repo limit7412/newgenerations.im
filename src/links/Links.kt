@@ -4,8 +4,12 @@ import react.*
 import react.dom.*
 import kotlinext.js.*
 import kotlinx.html.style
+import kotlin.js.Json
 
-fun RBuilder.links() {
+class Links : RComponent<RProps, RState>() {
+  // private fun RBuilder.timeline () =
+
+  override fun RBuilder.render() {
     div("links") {
       h2 {+"link"}
       p {
@@ -14,6 +18,11 @@ fun RBuilder.links() {
         }
       }
       p {
+        // timeline()
       }
     }
+  }
 }
+
+fun RBuilder.links() = child(Links::class) {}
+
