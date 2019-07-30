@@ -1,18 +1,18 @@
-body{
+body {
   margin: 0;
 }
 
-.gnav{
+.gnav {
   margin-top: 3px;
   margin-bottom: 3px;
   text-align: center;
   display: flex !important;
   list-style-type: none;
-  font-weight:bold;
+  font-weight: bold;
   font-weight: normal;
 }
 
-.gnav li a{
+.gnav li a {
   display: block;
   padding: 10px 8px;
   color: #000;
