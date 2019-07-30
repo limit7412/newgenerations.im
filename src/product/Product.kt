@@ -36,6 +36,11 @@ class Product : RComponent<RProps, Product.State>() {
           text = "Serverless FrameworkでCrystalを動作させるための自作custom runtime"
         ),
         Repository(
+          "newgenerations.im",
+          "https://github.com/limit7412/newgenerations.im",
+          text = "このページのリポジトリ"
+        ),
+        Repository(
           "slacknicodicsearch",
           "https://github.com/limit7412/slacknicodicsearch",
           text = "ニコニコ大百科からスクレイピングして結果を教えてくれるslack command"
