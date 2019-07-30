@@ -1,0 +1,22 @@
+body{
+  margin: 0;
+}
+
+.indexcatch{
+  text-align: right;
+  background: url('/img/catch.png') no-repeat top -23vw center;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-color: #ffffff;
+  padding: 5vw 3vw 19vw;
+}
+
+.indexcatch h1{
+  color: #F9F9F9;
+  font-size: 3vw;
+}
+
+.indexcatch p{
+  color: #F9F9F9;
+  font-size: 1.5vw;
+}
