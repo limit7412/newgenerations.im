@@ -1,0 +1,33 @@
+.product h2{
+  font-size: 30px;
+  border-left: 5px solid #4682B4;
+  padding: 5px;
+  font-weight: normal;
+}
+
+.product h3{
+  border-bottom: 1px solid #4682B4;
+  margin-left: 5px;
+  padding-left: 5px;
+  width: 60vw;
+  font-weight: normal;
+}
+
+.product p{
+  margin-left: 20px;
+  margin-right: 10vw;
+}
+
+.product h4{
+  margin-left: 20px;
+  font-weight: normal;
+}
+
+.product ul li{
+  list-style-type: none;
+}
+
+.product table{
+  margin-left: 2vw;
+  margin-right: 0.5vw;
+}
