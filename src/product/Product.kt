@@ -1,15 +1,24 @@
 package product
 
+import kotlin.arrayOf
+import kotlinext.js.*
 import react.*
 import react.dom.*
-import kotlinext.js.*
-import kotlinx.html.style
-import kotlin.arrayOf
 
 class Product : RComponent<RProps, Product.State>() {
   init {
     state.apply {
       repositorys = arrayOf(
+        Repository(
+          "weather-notifications",
+          "https://github.com/limit7412/weather-notifications",
+          text = "ウェザロさんが雨が振りそうな日に通知してくれるdiscord bot"
+        ),
+        Repository(
+          "lambda_dart_sls",
+          "https://github.com/limit7412/lambda_dart_sls",
+          text = "Serverless FrameworkでDartを動作させるための自作custom runtime"
+        ),
         Repository(
           "github_notifications_slack",
           "https://github.com/limit7412/github_notifications_slack",
@@ -60,6 +69,21 @@ class Product : RComponent<RProps, Product.State>() {
 
       writes = arrayOf(
         Write(
+          "新電子書籍流通システムのアーキテクチャを解説",
+          "Media Do Tech Do Blog",
+          "https://techdo.mediado.jp/entry/2019/10/29/090000"
+        ),
+        Write(
+          "AWS LambdaをAWS CodePipelineで自動デプロイできるようにしてみよう",
+          "Tech Do Book Vol.2 （技術書展7）",
+          "https://techdo.booth.pm/items/1548926"
+        ),
+        Write(
+          "AWS LambdaのCustom RuntimeでサーバーレスDartしてみた",
+          "qiita",
+          "https://qiita.com/qazx7412/items/8bda5d97614d272ed829"
+        ),
+        Write(
           "vue-cli + axios でmock環境を雑に作ったのでメモ",
           "qiita",
           "https://qiita.com/qazx7412/items/b52b5e818c226f1b5a21"
@@ -91,37 +115,40 @@ class Product : RComponent<RProps, Product.State>() {
     val url: String
   )
 
-  interface State: RState {
+  interface State : RState {
     var repositorys: Array<Repository>
     var writes: Array<Write>
   }
 
-  private fun RBuilder.repositorys () =
+  private fun RBuilder.repositorys() =
     state.repositorys.map {
       tr {
         td {
-          a(href = it.repo_url) {+it.name}
+          a(href = it.repo_url) { +it.name }
         }
-        td {+it.text}
+        td { +it.text }
       }
     }
 
-  private fun RBuilder.writes () =
-    state.writes.map{
-      li {
-        a(href = it.url) {+"${it.name} (${it.media})"}
+  private fun RBuilder.writes() =
+    state.writes.map {
+      tr {
+        td {
+          a(href = it.url) { +it.name }
+        }
+        td { +it.media }
       }
     }
 
   override fun RBuilder.render() {
     div("product") {
-      h2 {+"product"}
-      h3 {+"githubリポジトリ"}
+      h2 { +"product" }
+      h3 { +"githubリポジトリ" }
       table {
-        tbody {repositorys()}
+        tbody { repositorys() }
       }
-      h3 {+"執筆"}
-      ul {writes()}
+      h3 { +"執筆" }
+      ul { writes() }
     }
   }
 }
