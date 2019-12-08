@@ -10,6 +10,11 @@ class Product : RComponent<RProps, Product.State>() {
     state.apply {
       repositorys = arrayOf(
         Repository(
+          "lambda-crystal-sls",
+          "https://github.com/limit7412/lambda-nim-sls",
+          text = "Serverless Frameworkでnimを動作させるための自作custom runtime（アイマスハッカソン2019参加作品）"
+        ),
+        Repository(
           "weather-notifications",
           "https://github.com/limit7412/weather-notifications",
           text = "ウェザロさんが雨が振りそうな日に通知してくれるdiscord bot"
@@ -68,6 +73,16 @@ class Product : RComponent<RProps, Product.State>() {
       )
 
       writes = arrayOf(
+        Write(
+          "テックブログのpv数ランキングをアイドルが通知してくれるslack botをLambda + Goで作った話",
+          "Media Do Tech Do Blog",
+          "https://techdo.mediado.jp/entry/2019/12/06/090000"
+        ),
+        Write(
+          "サーバーレスCrystalのための自作Custom Runtimeを改良した話",
+          "qiita",
+          "https://qiita.com/qazx7412/items/151b2e9375e63c7a400d"
+        ),
         Write(
           "新電子書籍流通システムのアーキテクチャを解説",
           "Media Do Tech Do Blog",
