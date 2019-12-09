@@ -10,7 +10,7 @@ class Product : RComponent<RProps, Product.State>() {
     state.apply {
       repositorys = arrayOf(
         Repository(
-          "lambda-crystal-sls",
+          "lambda-nim-sls",
           "https://github.com/limit7412/lambda-nim-sls",
           text = "Serverless Frameworkでnimを動作させるための自作custom runtime（アイマスハッカソン2019参加作品）"
         ),
