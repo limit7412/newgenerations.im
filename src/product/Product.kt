@@ -74,11 +74,6 @@ class Product : RComponent<RProps, Product.State>() {
 
       writes = arrayOf(
         Write(
-          "重たい集計バッチをAthenaを利用して高速化した話",
-          "Media Do Tech Do Blog",
-          "https://techdo.mediado.jp/entry/2020/04/23/090000"
-        ),
-        Write(
           "テックブログのpv数ランキングをアイドルが通知してくれるslack botをLambda + Goで作った話",
           "Media Do Tech Do Blog",
           "https://techdo.mediado.jp/entry/2019/12/06/090000"
